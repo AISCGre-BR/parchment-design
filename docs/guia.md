@@ -6,7 +6,7 @@ Parchment Design é a linguagem visual das ferramentas de paleografia gregoriana
 - **Contenção.** Sem contadores, numeração, legendas explicativas ou estados escritos onde a forma já comunica. Ferramentas são ícones com tooltip; texto visível só na ação principal da vista. Ações contextuais aparecem só quando aplicáveis. Detalhe vai para tooltip, menu ou diálogo.
 - **Interface sem serifa, conteúdo com serifa.** Controles em Source Sans 3; o que vem do manuscrito e do projeto (sílabas, nomes de fontes, texto litúrgico, título da peça) em Source Serif 4.
 - **Profundidade com moderação.** Peças neutras têm volume: gradiente vertical quase imperceptível, brilho de 1px no topo (`highlight`) e sombra curta (`elev-1`). Pressionar afunda (`inset`). Cartões pousam na mesa (`elev-2`); o que flutua sobe mais (`elev-3`, `elev-4`). Nada de vidro, reflexo ou textura chamativa.
-- **Uma cor de ação.** `rubric` marca a ação principal, a seleção, o foco e a caixa ativa. Não é ornamento: sem iniciais vermelhas.
+- **Uma cor de ação.** `rubric` marca a ação principal, a seleção, o foco e a caixa ativa. Não é ornamento: sem iniciais vermelhas. Para destacar conteúdo, use os pigmentos.
 
 ## Cor
 
@@ -14,7 +14,11 @@ Parchment Design é a linguagem visual das ferramentas de paleografia gregoriana
 - Texto `ink`; secundário `ink-soft`; legendas e placeholders `ink-muted` (>= 4.7:1 em todos os fundos).
 - Fios `rule-soft` dentro de cartões, `rule` em contornos, `rule-strong` em hover de campos.
 - Ação: `rubric` sólido no botão preenchido (hover `rubric-soft`, pressionado `rubric-deep`), texto `on-rubric`, fundo tonal `rubric-wash`. Nunca gradiente nem contorno escuro em cor de ação: a profundidade vem da sombra macia tingida.
-- Estados, nomeados pelos pigmentos dos códices: `verdigris` sucesso, `orpiment` aviso, `lapis` informação e caixas de recorte, `danger` = `rubric`. Sempre com palavra.
+- Estados: `success` (= verdete), `warning`, `lapis` informação, `danger` (= rubrica). Sempre com palavra.
+
+### Pigmentos
+
+Paleta de destaque do conteúdo, separada da cor de ação: lápis-lazúli (`lapis`), ouro-pigmento (`orpiment`), verdete (`verdigris`), mínio (`minium`), púrpura de múrex (`murex`) e malaquita (`malachite`), cada um com `-wash`. Colore caixas de recorte, chips de sílaba, palavras e seções. Ciclo padrão por sílaba nessa ordem, escolhida para que vizinhos sejam distinguíveis também com deuteranopia. O usuário pode fixar o pigmento de qualquer sílaba, palavra ou seção. Texto sobre pigmento continua em `ink`.
 
 ### Tema Vigília
 

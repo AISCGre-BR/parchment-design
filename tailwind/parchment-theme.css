@@ -23,6 +23,16 @@
   --color-lapis-wash: var(--lapis-wash);
   --color-verdigris: var(--verdigris);
   --color-orpiment: var(--orpiment);
+  --color-minium: var(--minium);
+  --color-murex: var(--murex);
+  --color-malachite: var(--malachite);
+  --color-verdigris-wash: var(--verdigris-wash);
+  --color-orpiment-wash: var(--orpiment-wash);
+  --color-minium-wash: var(--minium-wash);
+  --color-murex-wash: var(--murex-wash);
+  --color-malachite-wash: var(--malachite-wash);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
   --color-danger: var(--danger);
   --color-focus: var(--focus);
   --spacing-1: var(--space-1);
