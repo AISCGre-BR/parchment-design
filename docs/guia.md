@@ -5,7 +5,7 @@ Parchment Design é a linguagem visual das ferramentas de paleografia gregoriana
 - **Função antes da forma.** Cada elemento existe para uma ação. Se a tela funciona sem ele, ele sai.
 - **Contenção.** Sem contadores, numeração, legendas explicativas ou estados escritos onde a forma já comunica. Ferramentas são ícones com tooltip; texto visível só na ação principal da vista. Ações contextuais aparecem só quando aplicáveis. Detalhe vai para tooltip, menu ou diálogo.
 - **Interface sem serifa, conteúdo com serifa.** Controles em Source Sans 3; o que vem do manuscrito e do projeto (sílabas, nomes de fontes, texto litúrgico, título da peça) em Source Serif 4.
-- **Profundidade com moderação.** Peças interativas têm volume: gradiente vertical leve, brilho de 1px no topo (`highlight`) e sombra curta (`elev-1`). Pressionar afunda (`inset`). Cartões pousam na mesa (`elev-2`); o que flutua sobe mais (`elev-3`, `elev-4`). Nada de vidro, reflexo ou textura chamativa.
+- **Profundidade com moderação.** Peças neutras têm volume: gradiente vertical quase imperceptível, brilho de 1px no topo (`highlight`) e sombra curta (`elev-1`). Pressionar afunda (`inset`). Cartões pousam na mesa (`elev-2`); o que flutua sobe mais (`elev-3`, `elev-4`). Nada de vidro, reflexo ou textura chamativa.
 - **Uma cor de ação.** `rubric` marca a ação principal, a seleção, o foco e a caixa ativa. Não é ornamento: sem iniciais vermelhas.
 
 ## Cor
@@ -13,7 +13,7 @@ Parchment Design é a linguagem visual das ferramentas de paleografia gregoriana
 - Mesa (`workspace`, com textura de papel a 5%) → cartões `surface` → peças elevadas e menus `surface-high`. Menubar e toolbar em `parchment`; trilhos rebaixados em `parchment-deep`.
 - Texto `ink`; secundário `ink-soft`; legendas e placeholders `ink-muted` (>= 4.7:1 em todos os fundos).
 - Fios `rule-soft` dentro de cartões, `rule` em contornos, `rule-strong` em hover de campos.
-- Ação: `rubric` (gradiente `rubric-soft` → `rubric` → `rubric-deep` no botão preenchido), texto `on-rubric`, fundo tonal `rubric-wash`.
+- Ação: `rubric` sólido no botão preenchido (hover `rubric-soft`, pressionado `rubric-deep`), texto `on-rubric`, fundo tonal `rubric-wash`. Nunca gradiente nem contorno escuro em cor de ação: a profundidade vem da sombra macia tingida.
 - Estados, nomeados pelos pigmentos dos códices: `verdigris` sucesso, `orpiment` aviso, `lapis` informação e caixas de recorte, `danger` = `rubric`. Sempre com palavra.
 
 ### Tema Vigília
