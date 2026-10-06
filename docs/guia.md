@@ -61,6 +61,6 @@ O scriptorium à luz de vela: marrom-tinta quente, texto cor de pergaminho, rubr
 
 ## Implementação
 
-- Repositório `htbg/parchment-design`: `tokens/tokens.json` é a fonte; `npm run build` gera `css/parchment.css` (variáveis, dois temas) e `tailwind/parchment-theme.css` (Tailwind 4).
+- Repositório `AISCGre-BR/parchment-design`: `tokens/tokens.json` é a fonte; `npm run build` gera `css/parchment.css` (variáveis, dois temas) e `tailwind/parchment-theme.css` (Tailwind 4).
 - Mocquereau (React + Tailwind 4): `@import "parchment-design/tailwind/parchment-theme.css"`; componentes com utilitários dos tokens, nenhum `gray-*`/`blue-*` cru.
 - Notker (TS puro): `parchment.css` + `components.css`.
