@@ -1,33 +1,22 @@
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
 <link rel="stylesheet" href="../css/parchment.css"><link rel="stylesheet" href="../css/components.css"><title>Menu</title></head>
 <body>
-<div class="sc-menubar">
-  <span class="sc-menubar__brand">Mocquereau</span>
-  <button class="sc-menubar__top" aria-expanded="true">Arquivo</button>
-  <button class="sc-menubar__top">Editar</button>
-  <button class="sc-menubar__top">Exibir</button>
-  <button class="sc-menubar__top">Recortes</button>
-  <button class="sc-menubar__top">Ajuda</button>
-  <span class="sc-menubar__title">Puer natus est<span class="sc-menubar__state">Editado</span></span>
-</div>
-<div style="padding:4px 0 16px 96px">
-  <div class="sc-menu" role="menu">
-    <button class="sc-menu__item" role="menuitem"><span class="sc-menu__check"></span><span>Novo projeto…</span><span class="sc-menu__kbd">Ctrl+N</span></button>
-    <button class="sc-menu__item" role="menuitem"><span class="sc-menu__check"></span><span>Abrir…</span><span class="sc-menu__kbd">Ctrl+O</span></button>
-    <button class="sc-menu__item" role="menuitem"><span class="sc-menu__check"></span><span>Abrir recente</span><span class="sc-menu__kbd">▸</span></button>
-    <div class="sc-menu__sep"></div>
-    <button class="sc-menu__item" role="menuitem"><span class="sc-menu__check"></span><span>Salvar</span><span class="sc-menu__kbd">Ctrl+S</span></button>
-    <button class="sc-menu__item" role="menuitem"><span class="sc-menu__check"></span><span>Salvar como…</span><span class="sc-menu__kbd">Ctrl+Shift+S</span></button>
-    <button class="sc-menu__item" role="menuitemcheckbox" aria-checked="true"><span class="sc-menu__check">❧</span><span>Salvamento automático</span><span class="sc-menu__kbd"></span></button>
-    <div class="sc-menu__sep"></div>
-    <button class="sc-menu__item" role="menuitem"><span class="sc-menu__check"></span><span>Exportar DOCX…</span><span class="sc-menu__kbd">Ctrl+E</span></button>
-    <button class="sc-menu__item" role="menuitem" disabled><span class="sc-menu__check"></span><span>Exportar PDF…</span><span class="sc-menu__kbd"></span></button>
-    <div class="sc-menu__sep"></div>
-    <button class="sc-menu__item" role="menuitem"><span class="sc-menu__check"></span><span>Fechar projeto</span><span class="sc-menu__kbd">Ctrl+W</span></button>
-  </div>
-</div>
-<button class="sc-btn sc-btn--outline" style="position:fixed;right:12px;bottom:12px" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">Claro / Vigília</button>
+<div class="sc-menubar"><span class="sc-menubar__brand">M</span><button class="sc-menubar__top">Arquivo</button><button class="sc-menubar__top">Editar</button><button class="sc-menubar__top">Exibir</button><button class="sc-menubar__top">Recortes</button><button class="sc-menubar__top">Ajuda</button><span class="sc-menubar__title">Puer natus est<span class="sc-menubar__state">— Editado</span></span></div><div style="padding:4px 0 16px 40px"><div class="sc-menu" role="menu">
+<button class="sc-menu__item"><span class="sc-menu__check"></span><span>Novo projeto</span><span class="sc-menu__kbd">Ctrl+N</span></button>
+<button class="sc-menu__item"><span class="sc-menu__check"></span><span>Abrir…</span><span class="sc-menu__kbd">Ctrl+O</span></button>
+<button class="sc-menu__item"><span class="sc-menu__check"></span><span>Abrir recente</span><span class="sc-menu__kbd">›</span></button>
+<div class="sc-menu__sep"></div>
+<button class="sc-menu__item"><span class="sc-menu__check"></span><span>Salvar</span><span class="sc-menu__kbd">Ctrl+S</span></button>
+<button class="sc-menu__item"><span class="sc-menu__check"></span><span>Salvar como…</span><span class="sc-menu__kbd">Ctrl+Shift+S</span></button>
+<button class="sc-menu__item"><span class="sc-menu__check">✓</span><span>Salvar automaticamente</span><span class="sc-menu__kbd"></span></button>
+<div class="sc-menu__sep"></div>
+<button class="sc-menu__item"><span class="sc-menu__check"></span><span>Importar do Gueranger…</span><span class="sc-menu__kbd"></span></button>
+<button class="sc-menu__item"><span class="sc-menu__check"></span><span>Exportar DOCX…</span><span class="sc-menu__kbd">Ctrl+E</span></button>
+<div class="sc-menu__sep"></div>
+<button class="sc-menu__item"><span class="sc-menu__check"></span><span>Fechar projeto</span><span class="sc-menu__kbd">Ctrl+W</span></button>
+</div></div>
+<button class="sc-btn sc-btn--elevated" style="position:fixed;right:12px;bottom:12px" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">Claro / Vigília</button>
 </body>
 </html>

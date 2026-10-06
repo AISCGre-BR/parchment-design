@@ -1,6 +1,3 @@
 # Toast
 
-Aviso flutuante no canto inferior direito, acima do cólofon. Adição intencional em relação ao Notker, que não tem retorno para salvar/exportar/erro além da barra de status.
-
-- Marca em `micro` na cor do estado (`verdigris` Salvo, `orpiment` Aviso, `danger` Erro) + mensagem + uma ação opcional.
-- Erro diz o que houve e como resolver; não some sozinho (`role="alert"`). Sucesso some em 4s.
+Faixa escura (`ink` com texto `parchment`; no tema Vigília, `surface-high`) no pé da janela, centralizada, com um ponto de cor do estado, uma frase curta e no máximo uma ação. Sucesso some em 4s; erro fica até ser dispensado.

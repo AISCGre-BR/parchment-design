@@ -1,6 +1,5 @@
 # Badge
 
-Selo de estado em 9px MAIÚSCULAS, `radius-sm`, borda de 1px na cor do estado. Chip é a variante de conteúdo (sílaba, glosa) em Cormorant itálico sobre `surface`.
+Selo em pílula (20px) com fundo tonal da cor do estado e palavra explícita. Chip é a peça de conteúdo (sílaba) em serifa itálica, com volume (`highlight` + `elev-1`); o ativo ganha contorno `rubric`.
 
-- `lapis` = sugerida pela detecção; `verdigris` = confirmada; `orpiment` = não salvo/aviso; `rubric` = erro.
-- Sempre com palavra; a cor nunca é o único sinal.
+Use selos com parcimônia: só onde o estado não é óbvio pela forma.

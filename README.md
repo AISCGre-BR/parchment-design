@@ -1,8 +1,8 @@
 # Parchment Design
 
-Linguagem visual compartilhada das ferramentas de paleografia gregoriana: Mocquereau, Notker e o que vier depois. Pergaminho, tinta e rubricação, como numa página de gradual, com tema claro (Pergaminho) e escuro (Vigília).
+Linguagem visual compartilhada das ferramentas de paleografia gregoriana: Mocquereau, Notker e o que vier depois. Função antes da forma: estrutura do Material Design, matéria dos manuscritos (pergaminho, tinta, rubrica) e profundidade sutil com luz vinda de cima. Tema claro (Pergaminho) e escuro (Vigília).
 
-*Shared visual language for the Gregorian paleography tools (Mocquereau, Notker): parchment, ink and rubrication, with light and dark themes. Docs are in Portuguese.*
+*Shared visual language for the Gregorian paleography tools (Mocquereau, Notker): function over form, Material-like structure, manuscript materials and subtle depth. Docs are in Portuguese.*
 
 ## Conteúdo
 
@@ -10,8 +10,8 @@ Linguagem visual compartilhada das ferramentas de paleografia gregoriana: Mocque
 |---|---|
 | `tokens/tokens.json` | Fonte única de verdade: cores (2 temas), tipografia, espaçamento, raios, sombras, medidas |
 | `css/parchment.css` | Tokens como variáveis CSS, com tema escuro por `prefers-color-scheme` e `data-theme` (gerado) |
-| `css/components.css` | Componentes de referência com prefixo `sc-` (botão, campo, menu, abas, toolbar, painel, diálogo, toast, caixa de recorte...) |
-| `tailwind/parchment-theme.css` | Tema para Tailwind 4: `bg-parchment`, `text-rubric`, `rounded-lg`, `shadow-raised`, `font-display`, `text-label`... (gerado) |
+| `css/components.css` | Componentes de referência com prefixo `sc-` (botão, controle segmentado, campo, menu, toolbar, painel, diálogo, toast, caixa de recorte...) |
+| `tailwind/parchment-theme.css` | Tema para Tailwind 4: `bg-parchment`, `text-rubric`, `rounded-lg`, `shadow-elev-2`, `font-serif`, `text-label`... (gerado) |
 | `docs/guia.md` | O guia: princípios (contenção primeiro), cor, tipografia, espaço, movimento, foco, iconografia, texto |
 | `docs/componentes/` | Diretrizes de cada componente |
 | `previews/` | Previews HTML independentes, com alternância de tema |
@@ -40,7 +40,7 @@ CSS puro (Notker):
 
 Tema: `document.documentElement.dataset.theme = 'dark' | 'light'`; sem o atributo, segue o sistema.
 
-Fontes: Source Serif 4 e Cormorant Garamond. Apps desktop devem embuti-las (ex.: `@fontsource-variable/source-serif-4`, `@fontsource/cormorant-garamond`) para funcionar offline.
+Fontes: Source Sans 3 (interface) e Source Serif 4 (conteúdo). Apps desktop devem embuti-las (`@fontsource-variable/source-sans-3`, `@fontsource-variable/source-serif-4`) para funcionar offline.
 
 ## Alterar tokens
 

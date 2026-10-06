@@ -1,12 +1,10 @@
 # CropBox
 
-Caixa de recorte de uma sílaba sobre a imagem do manuscrito, com três estados.
+Caixa de recorte de uma sílaba sobre a folha do manuscrito (`sc-folio`: superfície com leve vinheta, `elev-2`).
 
-- **Confirmada**: contorno sólido 1.5px `lapis` + preenchimento `lapis-wash`. Sem etiqueta; a sílaba aparece no hover.
-- **Ativa**: contorno `rubric` com halo `rubric-wash`, 8 alças de 8px (`handle`, `radius-handle`) e a única etiqueta visível, com a sílaba.
-- **Sugerida**: contorno tracejado `lapis`, sem preenchimento e sem etiqueta. Nunca substitui uma caixa confirmada.
-- Zoom: controle discreto no canto inferior direito do fólio (`sc-zoom`), não numa barra.
+- **Confirmada**: contorno 1.5px `lapis` + `lapis-wash`. Sem etiqueta.
+- **Ativa**: contorno `rubric` com halo, 8 alças de 8px (`radius-xs`, com `elev-1`), etiqueta da sílaba em `rubric`.
+- **Sugerida**: contorno tracejado `lapis`, vazia. Nunca substitui uma confirmada.
+- Zoom: controle flutuante no canto da folha.
 
-Por que `lapis`: os manuscritos já têm rubricas vermelhas e tinta sépia; o azul é a única família que não aparece no códice. A rubrica fica para o foco (a caixa ativa).
-
-Teclado: Enter aceita a sugestão, Delete rejeita, Tab/Shift+Tab percorre sílabas, setas movem 1px (Shift: 10px).
+`lapis` porque é a única cor que não existe no códice (tinta sépia, rubricas vermelhas). Teclado: Enter aceita, Delete rejeita, Tab percorre, setas movem 1px (Shift 10px).

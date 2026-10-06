@@ -1,8 +1,5 @@
 # Dialog
 
-Placa `surface` de até 440px com `radius-lg` e `shadow-float`, título `display` com inicial `rubric`, corpo `body` em `ink-soft` e ações à direita.
+Placa `surface-high` de até 420px, `radius-xl`, `elev-4`, sobre um véu de tinta a 18%. Título `title-lg` (pergunta ou verbo), uma frase de corpo e as ações.
 
-- Ordem das ações: ação destrutiva/alternativa à esquerda, Cancelar e a primária à direita; Enter aciona a primária, Esc cancela.
-- O título é uma pergunta ou um verbo ("Salvar alterações?", "Exportar tabela"); o corpo nomeia o objeto e a consequência.
-- Aviso secundário com `sc-note` (filete `orpiment`).
-- Fundo da janela atrás: `ink-wash`.
+- Ordem: alternativa destrutiva à esquerda; Cancelar (elevado) e a principal (preenchido) à direita. Enter aciona a principal, Esc cancela.

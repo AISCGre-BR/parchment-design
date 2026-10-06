@@ -3,6 +3,7 @@
   --parchment: #f6f1e7;
   --parchment-deep: #ece3d0;
   --surface: #fdfcf9;
+  --surface-high: #ffffff;
   --ink: #222222;
   --ink-soft: #3d342a;
   --ink-muted: #6f604f;
@@ -12,6 +13,7 @@
   --workspace: #efe8da;
   --rubric: #a02531;
   --rubric-soft: #b93744;
+  --rubric-deep: #861d28;
   --on-rubric: #fdfcf9;
   --rubric-wash: #a025310f;
   --ink-wash: #7a6a5812;
@@ -21,10 +23,12 @@
   --orpiment: #7a5200;
   --danger: var(--rubric);
   --focus: var(--rubric);
-  --shadow-raised: 0 1px 2px rgba(58,46,30,0.08), 0 1px 3px rgba(58,46,30,0.06);
-  --shadow-float: 0 12px 32px rgba(58,46,30,0.16), 0 2px 6px rgba(58,46,30,0.08);
-  --shadow-pop: 0 8px 24px rgba(58,46,30,0.14);
-  --shadow-inset: inset 0 1px 2px rgba(58,46,30,0.10);
+  --elev-1: 0 1px 1px rgba(58,46,30,0.10), 0 2px 4px rgba(58,46,30,0.08);
+  --elev-2: 0 1px 2px rgba(58,46,30,0.10), 0 4px 12px rgba(58,46,30,0.10);
+  --elev-3: 0 2px 4px rgba(58,46,30,0.10), 0 12px 28px rgba(58,46,30,0.16);
+  --elev-4: 0 4px 8px rgba(58,46,30,0.12), 0 24px 56px rgba(58,46,30,0.22);
+  --highlight: inset 0 1px 0 rgba(255,255,255,0.75);
+  --inset: inset 0 1px 2px rgba(58,46,30,0.12);
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -32,18 +36,17 @@
   --space-5: 20px;
   --space-6: 24px;
   --space-8: 32px;
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 10px;
-  --radius-handle: 2px;
+  --radius-xs: 2px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
   --menubar-h: 30px;
-  --toolbar-h: 40px;
-  --tabs-h: 36px;
-  --statusbar-h: 24px;
+  --toolbar-h: 44px;
   --sidebar-w: 220px;
   --handle: 8px;
-  --font-serif: "Source Serif 4", Charter, "Iowan Old Style", Georgia, serif;
-  --font-display: "Cormorant Garamond", "Source Serif 4", Georgia, serif;
+  --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-serif: "Source Serif 4", Charter, Georgia, serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -51,6 +54,7 @@
     --parchment: #1a1613;
     --parchment-deep: #231e19;
     --surface: #2b251f;
+    --surface-high: #342d26;
     --ink: #ede5d6;
     --ink-soft: #d4c8b2;
     --ink-muted: #a69580;
@@ -60,6 +64,7 @@
     --workspace: #141110;
     --rubric: #e0727a;
     --rubric-soft: #ea8a91;
+    --rubric-deep: #c95861;
     --on-rubric: #1a1613;
     --rubric-wash: #e0727a1a;
     --ink-wash: #ede5d60d;
@@ -69,10 +74,12 @@
     --orpiment: #e0b25a;
     --danger: var(--rubric);
     --focus: var(--rubric);
-    --shadow-raised: 0 1px 2px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3);
-    --shadow-float: 0 12px 32px rgba(0,0,0,0.55), 0 2px 6px rgba(0,0,0,0.35);
-    --shadow-pop: 0 8px 24px rgba(0,0,0,0.5);
-    --shadow-inset: inset 0 1px 2px rgba(0,0,0,0.45);
+    --elev-1: 0 1px 1px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.35);
+    --elev-2: 0 1px 2px rgba(0,0,0,0.5), 0 4px 12px rgba(0,0,0,0.4);
+    --elev-3: 0 2px 4px rgba(0,0,0,0.5), 0 12px 28px rgba(0,0,0,0.55);
+    --elev-4: 0 4px 8px rgba(0,0,0,0.55), 0 24px 56px rgba(0,0,0,0.6);
+    --highlight: inset 0 1px 0 rgba(255,255,255,0.07);
+    --inset: inset 0 1px 2px rgba(0,0,0,0.5);
     color-scheme: dark;
   }
 }
@@ -80,6 +87,7 @@
   --parchment: #1a1613;
   --parchment-deep: #231e19;
   --surface: #2b251f;
+  --surface-high: #342d26;
   --ink: #ede5d6;
   --ink-soft: #d4c8b2;
   --ink-muted: #a69580;
@@ -89,6 +97,7 @@
   --workspace: #141110;
   --rubric: #e0727a;
   --rubric-soft: #ea8a91;
+  --rubric-deep: #c95861;
   --on-rubric: #1a1613;
   --rubric-wash: #e0727a1a;
   --ink-wash: #ede5d60d;
@@ -98,9 +107,11 @@
   --orpiment: #e0b25a;
   --danger: var(--rubric);
   --focus: var(--rubric);
-  --shadow-raised: 0 1px 2px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3);
-  --shadow-float: 0 12px 32px rgba(0,0,0,0.55), 0 2px 6px rgba(0,0,0,0.35);
-  --shadow-pop: 0 8px 24px rgba(0,0,0,0.5);
-  --shadow-inset: inset 0 1px 2px rgba(0,0,0,0.45);
+  --elev-1: 0 1px 1px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.35);
+  --elev-2: 0 1px 2px rgba(0,0,0,0.5), 0 4px 12px rgba(0,0,0,0.4);
+  --elev-3: 0 2px 4px rgba(0,0,0,0.5), 0 12px 28px rgba(0,0,0,0.55);
+  --elev-4: 0 4px 8px rgba(0,0,0,0.55), 0 24px 56px rgba(0,0,0,0.6);
+  --highlight: inset 0 1px 0 rgba(255,255,255,0.07);
+  --inset: inset 0 1px 2px rgba(0,0,0,0.5);
   color-scheme: dark;
 }

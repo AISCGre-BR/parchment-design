@@ -1,23 +1,22 @@
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
 <link rel="stylesheet" href="../css/parchment.css"><link rel="stylesheet" href="../css/components.css"><title>Cover</title>
 <style>
   html, body { margin: 0; background: var(--parchment); }
   .cv { position: relative; width: 960px; height: 300px; overflow: hidden; }
   .cv svg { position: absolute; inset: 0; }
-  .parch { fill: var(--parchment-deep); rx: var(--radius-lg); }
+  .parch { fill: var(--parchment-deep); rx: var(--radius-lg); filter: drop-shadow(0 4px 10px rgba(58,46,30,.18)); }
   .surf { fill: var(--surface); }
-  .rub { fill: var(--rubric); rx: var(--radius-lg); }
+  .rub { fill: var(--rubric); rx: var(--radius-lg); filter: drop-shadow(0 4px 10px rgba(58,46,30,.18)); }
   .lap { fill: var(--lapis); rx: var(--radius-md); }
   .ink { fill: var(--ink); rx: var(--radius-lg); }
   .ori { fill: var(--orpiment); rx: var(--radius-sm); }
   .hair { stroke: var(--rule); stroke-width: 1; fill: none; }
   .hair-ink { stroke: var(--ink-muted); stroke-width: 1; fill: none; }
   .txt { position: absolute; left: 48px; bottom: 44px; max-width: 420px; }
-  .name { font: 600 76px/.95 var(--font-display); color: var(--ink); margin: 0; }
-  .name::first-letter { color: var(--rubric); }
-  .tag { font: italic 400 14px/20px var(--font-serif); color: var(--ink-muted); margin: 12px 0 0; }
+  .name { font: 600 72px/.95 var(--font-serif); color: var(--ink); margin: 0; }
+  .tag { font: 400 14px/20px var(--font-sans); color: var(--ink-muted); margin: 12px 0 0; }
 </style>
 </head>
 <body>
@@ -39,8 +38,8 @@
   <line class="hair-ink" x1="480" y1="128" x2="960" y2="128"/>
   <line class="hair-ink" x1="480" y1="144" x2="960" y2="144"/>
 </svg>
-<div class="txt"><p class="name">Parchment Design</p><p class="tag">Pergaminho, tinta e rubricação para as ferramentas de paleografia gregoriana.</p></div>
+<div class="txt"><p class="name">Parchment Design</p><p class="tag">Função antes da forma, com a matéria dos manuscritos.</p></div>
 </div>
-<button class="sc-btn sc-btn--outline" style="position:fixed;right:12px;bottom:12px" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">Claro / Vigília</button>
+<button class="sc-btn sc-btn--elevated" style="position:fixed;right:12px;bottom:12px" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">Claro / Vigília</button>
 </body>
 </html>

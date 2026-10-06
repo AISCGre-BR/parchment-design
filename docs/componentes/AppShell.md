@@ -1,8 +1,6 @@
 # AppShell
 
-A janela inteira do Mocquereau: menubar com título do projeto, abas, toolbar contextual e espaço de trabalho. Sem barra de status.
+A janela: menubar (30px, título centralizado), toolbar (44px, seletor de vistas + ferramentas + ação principal) e a mesa (`workspace`) com cartões. Sem faixa de abas e sem barra de status.
 
-- De cima para baixo: `menubar-h` 30, `tabs-h` 36, toolbar 40, espaço de trabalho.
-- Espaço de trabalho: fundo `workspace` e cartões separados por 12px (lista de fontes, fólio).
-- Aba Recortes: fólio com caixas e, embaixo, a faixa de prévia das sílabas (ativa em `rubric`, sem recorte em `ink-muted`).
-- O título do projeto e "Editado" ficam na menubar; o sistema operacional também recebe o título via `setTitle`.
+- Vista Recortes: cartão de fontes à esquerda; a folha do manuscrito e a faixa de prévia das sílabas pousadas diretamente na mesa.
+- O estado do arquivo aparece só no título ("— Editado"); salvar e exportar confirmam com Toast.

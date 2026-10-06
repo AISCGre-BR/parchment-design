@@ -1,11 +1,8 @@
 # Menu
 
-Menubar no estilo Office/MuseScore desenhada dentro da janela, mais o menu suspenso e o menu de contexto.
+Menubar compacta (30px) com o ícone do app, os menus e o título do projeto centralizado ("Puer natus est — Editado" enquanto houver alterações). O menu suspenso é uma placa `surface-high` com `radius-lg`, `elev-3` e itens de 28px.
 
-- Topo em versalete (`menubar`), `ink-soft`; hover `rubric`; aberto ganha `parchment-deep`.
-- À direita da menubar, o título do projeto e o estado ("modificado") substituem a barra de título do sistema.
-- Itens: grid de 3 colunas (marca, rótulo, atalho). Toggle marcado mostra o fleurão ❧ em `rubric`, nunca um checkmark.
-- Clique abre; com um menu aberto, passar o mouse sobre outro topo troca de menu; Esc e clique fora fecham; setas e Enter navegam.
-- O mesmo `sc-menu` serve de menu de contexto (botão direito numa célula da tabela ou numa caixa de recorte).
-
-Rótulos e atalhos vêm do registro de comandos; um item que abre diálogo termina em reticências.
+- Item em hover/foco: fundo `rubric`, texto `on-rubric` (como nos menus do macOS).
+- Toggle ligado: ✓ em `rubric`.
+- Atalhos à direita em `caption`; reticências quando o item abre diálogo.
+- O mesmo `sc-menu` serve de menu de contexto.

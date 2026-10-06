@@ -1,7 +1,7 @@
 # Toolbar
 
-Faixa sobre o fundo `workspace`, logo abaixo das abas. Ferramentas relacionadas ficam em grupos segmentados (`sc-toolbar__group`).
+Faixa única de 44px abaixo da menubar: seletor de vistas à esquerda, grupos de ferramentas (segmentados, só ícones), espaço, e à direita as ações da vista.
 
-- Ferramentas são ícones com tooltip (nome + atalho). Texto visível só na ação principal da aba ("Sugerir", "Exportar").
-- Ações que só fazem sentido num estado aparecem só nesse estado: "Aceitar 2 sugestões" existe apenas enquanto houver sugestões pendentes.
-- Nada de contadores de posição na toolbar.
+- A ação principal da vista é o único botão preenchido e fica na ponta direita ("Sugerir", "Exportar DOCX").
+- Ações contextuais aparecem só quando aplicáveis ("Aceitar 2" existe enquanto houver 2 sugestões pendentes).
+- Sem contadores ou textos de posição.

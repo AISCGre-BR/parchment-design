@@ -1,19 +1,13 @@
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
 <link rel="stylesheet" href="../css/parchment.css"><link rel="stylesheet" href="../css/components.css"><title>Dialog</title></head>
 <body>
-<div class="sc-backdrop">
-  <div class="sc-dialog" role="dialog" aria-labelledby="dt">
-    <h2 class="sc-dialog__title" id="dt">Salvar alterações?</h2>
-    <p class="sc-dialog__body">Se fechar sem salvar, as alterações em "Puer natus est" serão perdidas.</p>
-    <div class="sc-dialog__actions">
-      <button class="sc-btn">Não salvar</button><span class="sc-spacer"></span>
-      <button class="sc-btn sc-btn--outline">Cancelar</button>
-      <button class="sc-btn sc-btn--primary">Salvar</button>
-    </div>
-  </div>
-</div>
-<button class="sc-btn sc-btn--outline" style="position:fixed;right:12px;bottom:12px" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">Claro / Vigília</button>
+<div class="sc-backdrop"><div class="sc-dialog" role="dialog" aria-labelledby="dt">
+<h2 class="sc-dialog__title" id="dt">Salvar alterações?</h2>
+<p class="sc-dialog__body">Se fechar sem salvar, as alterações em "Puer natus est" serão perdidas.</p>
+<div class="sc-dialog__actions"><button class="sc-btn">Não salvar</button><span class="sc-spacer"></span><button class="sc-btn sc-btn--elevated">Cancelar</button><button class="sc-btn sc-btn--filled">Salvar</button></div>
+</div></div>
+<button class="sc-btn sc-btn--elevated" style="position:fixed;right:12px;bottom:12px" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">Claro / Vigília</button>
 </body>
 </html>
