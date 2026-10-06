@@ -1,15 +1,28 @@
 {
   "name": "parchment-design",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.1",
   "description": "Linguagem visual compartilhada das ferramentas de paleografia gregoriana (Mocquereau, Notker).",
   "type": "module",
-  "files": ["tokens", "css", "tailwind", "docs"],
+  "files": [
+    "tokens",
+    "css",
+    "tailwind",
+    "docs",
+    "LICENSE",
+    "NOTICE.md"
+  ],
   "exports": {
     "./tokens.json": "./tokens/tokens.json",
     "./parchment.css": "./css/parchment.css",
     "./components.css": "./css/components.css",
     "./tailwind/parchment-theme.css": "./tailwind/parchment-theme.css"
   },
-  "scripts": { "build": "node scripts/build-css.mjs" }
+  "scripts": {
+    "build": "node scripts/build-css.mjs"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AISCGre-BR/parchment-design"
+  }
 }

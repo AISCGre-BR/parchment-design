@@ -16,12 +16,10 @@ Linguagem visual compartilhada das ferramentas de paleografia gregoriana: Mocque
 | `docs/componentes/` | Diretrizes de cada componente |
 | `previews/` | Previews HTML independentes, com alternância de tema |
 
-Versão navegável (privada): https://claude.ai/artifact/Mc3oQbKeCaE8XzGGQnABaB
-
 ## Uso
 
 ```bash
-npm install --save github:htbg/parchment-design
+npm install --save github:AISCGre-BR/parchment-design#v1.0.0
 ```
 
 Tailwind 4 (Mocquereau):
@@ -45,3 +43,7 @@ Fontes: Source Sans 3 (interface) e Source Serif 4 (conteúdo). Apps desktop dev
 ## Alterar tokens
 
 Edite `tokens/tokens.json` e rode `npm run build`. Nunca edite `css/parchment.css` nem `tailwind/parchment-theme.css` à mão. Todo par de texto precisa de contraste >= 4.5:1 nos dois temas.
+
+## Licença
+
+MIT (ver `LICENSE`). Avisos de terceiros (ícones Lucide nos previews, fontes OFL) em `NOTICE.md`.
