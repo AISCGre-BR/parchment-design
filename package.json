@@ -1,0 +1,15 @@
+{
+  "name": "parchment-design",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Linguagem visual compartilhada das ferramentas de paleografia gregoriana (Mocquereau, Notker).",
+  "type": "module",
+  "files": ["tokens", "css", "tailwind", "docs"],
+  "exports": {
+    "./tokens.json": "./tokens/tokens.json",
+    "./parchment.css": "./css/parchment.css",
+    "./components.css": "./css/components.css",
+    "./tailwind/parchment-theme.css": "./tailwind/parchment-theme.css"
+  },
+  "scripts": { "build": "node scripts/build-css.mjs" }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap">
+<link rel="stylesheet" href="../css/parchment.css"><link rel="stylesheet" href="../css/components.css"><title>Welcome</title></head>
+<body>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:56px;padding:56px;min-height:440px;background:var(--workspace)">
+  <div style="display:flex;flex-direction:column;gap:28px">
+    <div class="sc-display sc-initial" style="font-size:44px;line-height:48px">Mocquereau</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="sc-btn sc-btn--primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>Novo projeto</button>
+      <button class="sc-btn sc-btn--outline">Abrir…</button>
+    </div>
+    <p class="sc-note">Kyrie IV não foi salvo na última sessão. <button class="sc-toast__act">Recuperar</button></p>
+  </div>
+  <section class="sc-panel" style="align-self:start"><header class="sc-panel__head"><h3 class="sc-panel__title">Recentes</h3></header>
+    <ul class="sc-list">
+      <li class="sc-list__row" title="~/Pesquisa/introitos/puer-natus-est.mocquereau"><span class="sc-list__name">Puer natus est</span><span class="sc-list__date">hoje</span></li>
+      <li class="sc-list__row" title="~/Pesquisa/ordinario/sanctus-viii.mocquereau"><span class="sc-list__name">Sanctus VIII</span><span class="sc-list__date">ontem</span></li>
+      <li class="sc-list__row" title="~/Pesquisa/ordinario/gloria-iv.mocquereau.json"><span class="sc-list__name">Gloria IV</span><span class="sc-list__date">2 out</span></li>
+      <li class="sc-list__row" title="~/Pesquisa/introitos/ad-te-levavi.mocquereau"><span class="sc-list__name">Ad te levavi</span><span class="sc-list__date">28 set</span></li>
+    </ul>
+  </section>
+</div>
+<button class="sc-btn sc-btn--outline" style="position:fixed;right:12px;bottom:12px" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">Claro / Vigília</button>
+</body>
+</html>

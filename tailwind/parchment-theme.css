@@ -1,0 +1,67 @@
+/* Parchment Design para Tailwind 4 — gerado. Uso: @import "tailwindcss"; @import "parchment-design/tailwind/parchment-theme.css"; */
+@import "../css/parchment.css";
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+@theme inline {
+  --color-parchment: var(--parchment);
+  --color-parchment-deep: var(--parchment-deep);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-muted: var(--ink-muted);
+  --color-rule: var(--rule);
+  --color-rule-soft: var(--rule-soft);
+  --color-rule-strong: var(--rule-strong);
+  --color-workspace: var(--workspace);
+  --color-rubric: var(--rubric);
+  --color-rubric-soft: var(--rubric-soft);
+  --color-on-rubric: var(--on-rubric);
+  --color-rubric-wash: var(--rubric-wash);
+  --color-ink-wash: var(--ink-wash);
+  --color-lapis: var(--lapis);
+  --color-lapis-wash: var(--lapis-wash);
+  --color-verdigris: var(--verdigris);
+  --color-orpiment: var(--orpiment);
+  --color-danger: var(--danger);
+  --color-focus: var(--focus);
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-8: var(--space-8);
+}
+@theme {
+  --shadow-raised: 0 1px 2px rgba(58,46,30,0.08), 0 1px 3px rgba(58,46,30,0.06);
+  --shadow-float: 0 12px 32px rgba(58,46,30,0.16), 0 2px 6px rgba(58,46,30,0.08);
+  --shadow-pop: 0 8px 24px rgba(58,46,30,0.14);
+  --shadow-inset: inset 0 1px 2px rgba(58,46,30,0.10);
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-handle: 2px;
+  --font-serif: "Source Serif 4", Charter, "Iowan Old Style", Georgia, serif;
+  --font-display: "Cormorant Garamond", "Source Serif 4", Georgia, serif;
+  --text-display-xl: 44px;
+  --text-display-xl--line-height: 48px;
+  --text-display: 28px;
+  --text-display--line-height: 32px;
+  --text-title: 21px;
+  --text-title--line-height: 26px;
+  --text-name: 16px;
+  --text-name--line-height: 20px;
+  --text-body: 14px;
+  --text-body--line-height: 21px;
+  --text-body-sm: 13px;
+  --text-body-sm--line-height: 18px;
+  --text-label: 13px;
+  --text-label--line-height: 16px;
+  --text-menubar: 12px;
+  --text-menubar--line-height: 12px;
+  --text-caption: 11px;
+  --text-caption--line-height: 16px;
+  --text-micro: 10px;
+  --text-micro--line-height: 12px;
+  --text-syllable: 15px;
+  --text-syllable--line-height: 18px;
+}
