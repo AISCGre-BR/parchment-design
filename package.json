@@ -1,6 +1,6 @@
 {
   "name": "parchment-design",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Linguagem visual compartilhada das ferramentas de paleografia gregoriana (Mocquereau, Notker).",
   "type": "module",
   "files": [

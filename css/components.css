@@ -150,6 +150,10 @@ html, body { background: var(--parchment); color: var(--ink); font: 400 14px/20p
 .sc-toast__act:hover { background: color-mix(in srgb, var(--parchment) 12%, transparent); }
 [data-theme="dark"] .sc-toast { background: var(--surface-high); color: var(--ink); box-shadow: var(--highlight), var(--elev-3); }
 [data-theme="dark"] .sc-toast__act { color: var(--rubric); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .sc-toast { background: var(--surface-high); color: var(--ink); box-shadow: var(--highlight), var(--elev-3); }
+  :root:not([data-theme="light"]) .sc-toast__act { color: var(--rubric); }
+}
 
 /* ---------- Folio and crop boxes ---------- */
 .sc-folio { position: relative; border-radius: var(--radius-lg); overflow: hidden; background: radial-gradient(120% 90% at 30% 20%, var(--surface), var(--parchment-deep)); box-shadow: var(--highlight), var(--elev-2), 0 0 0 1px var(--rule-soft); }
